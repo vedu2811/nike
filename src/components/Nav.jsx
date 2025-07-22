@@ -8,7 +8,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x pt-8 relative z-10 w-full">
       <nav className='flex justify-between items-center max-container'>
         <a href="/">
           <img
@@ -43,7 +43,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className='lg:hidden absolute top-full left-0 w-full bg-white flex flex-col items-center gap-6 py-6 shadow-md z-50'>
+        <ul className='lg:hidden w-full bg-white flex flex-col items-center gap-6 py-6 shadow-md'>
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
