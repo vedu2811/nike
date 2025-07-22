@@ -43,7 +43,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className='lg:hidden w-full bg-white flex flex-col items-center gap-6 py-6 shadow-md'>
+        <ul className='lg:hidden w-full bg-white flex flex-col items-center gap-6 py-6 shadow-sm'>
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
