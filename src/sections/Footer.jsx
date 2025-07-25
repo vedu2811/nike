@@ -1,5 +1,5 @@
 import {footerLogo} from '../assets/images'
-import {socialMedia} from '../constants'
+import {footerLinks, socialMedia} from '../constants'
 
 const Footer = () => {
   return (
@@ -26,6 +26,14 @@ const Footer = () => {
                 </div>
             ))}
           </div>
+        </div>
+
+        <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
+            {footerLinks.map((section)=>(
+              <div key={section}>
+                <h4 className='text-white'>{section.title}</h4>
+              </div>
+            ))}
         </div>
       </div>
     </footer>
