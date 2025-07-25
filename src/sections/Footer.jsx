@@ -32,6 +32,13 @@ const Footer = () => {
             {footerLinks.map((section)=>(
               <div key={section}>
                 <h4 className='text-white'>{section.title}</h4>
+                <ul>
+                  {section.links.map((link)=>(
+                    <li>
+                      <a>{link.name}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
         </div>
